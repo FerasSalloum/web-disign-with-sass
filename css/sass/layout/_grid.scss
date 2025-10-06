@@ -1,0 +1,23 @@
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @media (#{$STR-min-small}) {
+        width: 750px;   
+    }
+    @media (#{$STR-min-medium}) {
+        width: 970px;   
+    }
+    @media (#{$STR-min-large}) {
+        width: 1170px;   
+    }
+}
+.clearfix{
+    clear: both;
+}
+.text-center-xs{
+    @media (#{$STR-max-mobile}) {
+        text-align: center;
+    }
+}

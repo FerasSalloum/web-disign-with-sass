@@ -1,0 +1,91 @@
+@import "sass/helpers/variabules";
+@import "sass/helpers/functions" ;
+@import "sass/helpers/mixins" ;
+@import "sass/pages/globalpage";
+@import "sass/components/button" ;
+@import "sass/components/heading" ;
+@import "sass/layout/grid" ;
+
+$float-left:right;
+$float-right:left;
+$text-left:right;
+$text-right:left;
+
+/* start header*/ 
+.header{ 
+    .logo{
+        @media (#{$STR-min-medium}){
+            float: $float-left;
+            text-align:$text-left;
+        }
+        .the-toggler{
+            right: auto;
+            left: 15px;
+        }
+    }
+}
+.navbar{
+    @media (#{$STR-min-medium}){
+        float: $float-right;
+    }
+    li{
+        float: $float-right;
+        @media (#{$STR-max-mobile}) {
+            text-align: $text-left;
+        }
+    }
+}
+/* end header*/ 
+
+/* start home page */ 
+.services{
+    .service-box{
+        @media (#{$STR-min-medium}) {
+            float: $float-left;
+        }
+    }
+}
+.players{
+    .players-box{
+        @media (#{$STR-min-small}) {
+            float: $float-left;
+        }
+    }
+}
+.lorem-ipsum{
+    .lorem-box{
+        float: $float-left;
+    }
+}
+/* end home page */ 
+
+/* start footer*/
+.footer{
+    .gallery, .info,.contact{
+        float: $float-left;
+    }
+    .gallery{
+        .img-box{
+            img{
+                @media (#{$STR-min-small}) {
+                    float: $float-left;
+                }
+            }
+            .text-box{
+                @media (#{$STR-min-small}) {
+                    float: $float-left;
+                }
+            }
+        }
+    }
+    .copyright{
+        .auther,
+        .text{
+            float: $float-left;
+        }
+        .auther{
+            text-align: $text-right;
+        }
+    }
+}
+/* end footer*/ 

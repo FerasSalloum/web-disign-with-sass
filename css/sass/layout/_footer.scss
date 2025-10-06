@@ -1,0 +1,119 @@
+.footer{
+    background-color: #e2e2e2;
+    overflow: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+    .gallery, .info,.contact{
+        float: $float-left;
+    }
+    .gallery{
+        @media (#{$STR-max-mobile}) {
+            
+        }
+        @media (#{$STR-min-small}) {
+            width: 100%;
+        }
+        @media (#{$STR-min-medium}) {
+            width: 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 20px;
+            img{
+                @media (#{$STR-min-small}) {
+                    float: $float-left;
+                }
+                width: 150px;
+                height: 150px;
+            }
+            .text-box{
+                @media (#{$STR-min-small}) {
+                    float: $float-left;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    width: calc(100% - 180px);
+                }
+                h4{
+                    color: $red-color;
+                    margin: 20px 0 0px;
+                }
+                p{
+                    color: #888;
+                    line-height: 1.9;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .info{
+        width: 100%;
+        @media (#{$STR-min-small}) {
+            width: 50%;
+        }
+        @media (#{$STR-min-medium}) {
+            width: 25%;
+        }
+        ul{
+            line-height: 1.8;
+            color: #888;
+            li{
+                span{
+                    color: $red-color;
+                    font-weight: bold;
+                }
+            }
+            .num-box{
+                margin: 20px 0;
+            }   
+        }
+        h4{
+            color: #888;
+            font-weight: bold;
+            margin: 0;
+        }
+        p{
+            color: #888;
+            margin-top: 8px;
+        }
+    }
+    .contact{
+        @media (#{$STR-min-small}) {
+            width: 50%;
+        }
+        @media (#{$STR-min-medium}) {
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            border: 1PX solid #c0c0c0;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        textarea{
+            height: 140px;
+        }
+
+    }
+    .section-title{
+        color: #444;
+        font-weight: normal;
+    }
+    .copyright{
+        color: #888;
+        padding: 15px 0 30px;
+        border-top: 1px solid #777;
+        overflow: hidden;
+        margin-top: 30px;
+        .auther,
+        .text{
+            float: $float-left;
+            width: 50%;
+        }
+        .auther{
+            text-align: $text-right;
+        }
+    }
+}

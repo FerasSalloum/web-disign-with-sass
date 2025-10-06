@@ -1,0 +1,68 @@
+@mixin mix-min-small {
+    @media (min-width: 576px){
+        @content;
+}};
+@mixin mix-min-medium {
+    @media (min-width: 768px){
+        @content;
+}};
+@mixin mix-min-large {
+    @media (min-width: 992px){
+        @content;
+}};
+@mixin mix-min-Xlarge {
+    @media (min-width: 1200px){
+        @content;
+}};
+@mixin mix-min-XXlarge {
+    @media (min-width:  1400px){
+        @content;
+}};
+
+@mixin mix-max-Xsmall {
+    @media (max-width: 575.98px){
+        @content;
+}};
+@mixin mix-max-small {
+    @media (max-width: 767.98px){
+        @content;
+}};
+@mixin mix-max-medium {
+    @media (max-width: 991.98px){
+        @content;
+}};
+@mixin mix-max-large {
+    @media (max-width: 1199.98px){
+        @content;
+}};
+@mixin mix-max-large {
+    @media (max-width: 1399.98px){
+        @content;
+}};
+// // overlae mixn
+// @mixin overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
+// // prefixes mixn
+// @mixin prefixer ($property, $value ,$prefixes:()){
+//     @each $prefix  in $prefixes{
+//         #{"-" + $prefix +"-" + $property} : $value;
+//     }
+//     #{$property}:$value;
+// }
+// // animation mixin
+// @mixin keyFram($animation-name){
+//     @-webkit-keyframes #{$animation-name} {
+//         @content;
+//     }
+//     @-moz-keyframes #{$animation-name} {
+//         @content;
+//     }
+//     @keyframes #{$animation-name} {
+//         @content;
+//     }
+// }
